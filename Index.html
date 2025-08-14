@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Djibril Recharge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.png" alt="Logo Djibril Recharge" class="logo">
+      <span class="brand-name">Djibril Recharge</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#services">Services</a>
+      <a href="#motos">Motos</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="hero.jpg" alt="Bannière" class="hero-img">
+    <div class="hero-overlay">
+      <div>
+        <h1>Avec nous, tu roules et tu transfères sans forcer.</h1>
+        <div class="cta-row">
+          <a href="#services" class="btn primary">Voir nos services</a>
+          <a href="#contact" class="btn ghost">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <h2>Nos Services</h2>
+    <div class="grid motos-grid">
+      <div class="card">
+        <img src="service1.jpg" alt="Recharge mobile">
+        <div class="card-body">
+          <h3>Recharge Mobile</h3>
+          <p>Rechargez rapidement tous vos opérateurs.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="service2.jpg" alt="Transfert d'argent">
+        <div class="card-body">
+          <h3>Transfert d'Argent</h3>
+          <p>Envoi et réception rapide et sécurisé.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="service3.jpg" alt="Vente de motos">
+        <div class="card-body">
+          <h3>Vente de Motos</h3>
+          <p>Des motos fiables et économiques.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOTOS -->
+  <section class="section" id="motos">
+    <h2>Nos Motos</h2>
+    <div class="grid motos-grid">
+      <div class="card">
+        <img src="moto1.jpg" alt="Moto modèle 1">
+        <div class="card-body">
+          <h3>Moto Modèle 1</h3>
+          <p class="price">Prix sur demande</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="moto2.jpg" alt="Moto modèle 2">
+        <div class="card-body">
+          <h3>Moto Modèle 2</h3>
+          <p class="price">Prix sur demande</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="section" id="galerie">
+    <h2>Galerie</h2>
+    <div class="grid galerie-grid">
+      <img src="gal1.jpg" alt="Photo 1">
+      <img src="gal2.jpg" alt="Photo 2">
+      <img src="gal3.jpg" alt="Photo 3">
+      <img src="gal4.jpg" alt="Photo 4">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="contact-cards">
+      <a href="tel:0505818210" class="contact-card call">📞 0505818210</a>
+      <a href="tel:0707074803" class="contact-card call">📞 0707074803</a>
+      <a href="https://wa.me/225707074803" target="_blank" class="contact-card wa">💬 WhatsApp</a>
+      <a href="mailto:djibril_seynou@gmail.com" class="contact-card mail">✉️ Email</a>
+      <a href="https://maps.google.com/?q=7.722204,-5.027058" target="_blank" class="contact-card">📍 Google Map</a>
+    </div>
+
+    <form action="#" method="post" class="contact-form">
+      <input type="text" name="nom" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message" rows="4" required></textarea>
+      <button type="submit" class="btn primary small">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Djibril Recharge - Tous droits réservés</p>
+  </footer>
+
+  <!-- SCRIPT MENU -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
